@@ -2,7 +2,6 @@
 //  WeatherImageViewModel.swift
 //  OWeatherApp (iOS)
 //
-//  Created by Lyn on 16/05/22.
 //
 
 import Foundation

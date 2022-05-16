@@ -14,7 +14,6 @@
 		3C346BC828313BF800C17B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C346BB628313BF800C17B5F /* Assets.xcassets */; };
 		3C346BC928313BF800C17B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C346BB628313BF800C17B5F /* Assets.xcassets */; };
 		3C346BD42831566700C17B5F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BD32831566700C17B5F /* Weather.swift */; };
-		3C346BD62831571500C17B5F /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BD52831571500C17B5F /* WeatherViewModel.swift */; };
 		3C346BD828326B3B00C17B5F /* WheatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BD728326B3B00C17B5F /* WheatherViewModel.swift */; };
 		3C346BDA2832909400C17B5F /* WeatherImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BD92832909400C17B5F /* WeatherImageViewModel.swift */; };
 		3C486BF32832C6FE00B19424 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3C486BF22832C6FE00B19424 /* README.md */; };
@@ -30,7 +29,6 @@
 		3C346BC128313BF800C17B5F /* OWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C346BC328313BF800C17B5F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3C346BD32831566700C17B5F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		3C346BD52831571500C17B5F /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3C346BD728326B3B00C17B5F /* WheatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherViewModel.swift; sourceTree = "<group>"; };
 		3C346BD92832909400C17B5F /* WeatherImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherImageViewModel.swift; sourceTree = "<group>"; };
 		3C486BF22832C6FE00B19424 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				3C346BB428313BF700C17B5F /* OWeatherAppApp.swift */,
 				3C346BB528313BF700C17B5F /* ContentView.swift */,
 				3C346BB628313BF800C17B5F /* Assets.xcassets */,
-				3C346BD52831571500C17B5F /* WeatherViewModel.swift */,
 				3C346BD728326B3B00C17B5F /* WheatherViewModel.swift */,
 				3C346BD92832909400C17B5F /* WeatherImageViewModel.swift */,
 				3CFDF14228329DE700E9E515 /* ForecastViewModel.swift */,
@@ -208,7 +205,6 @@
 			files = (
 				3C346BC628313BF800C17B5F /* ContentView.swift in Sources */,
 				3CFDF1452832A76200E9E515 /* DateExtension.swift in Sources */,
-				3C346BD62831571500C17B5F /* WeatherViewModel.swift in Sources */,
 				3C346BD42831566700C17B5F /* Weather.swift in Sources */,
 				3CFDF14328329DE700E9E515 /* ForecastViewModel.swift in Sources */,
 				3C346BDA2832909400C17B5F /* WeatherImageViewModel.swift in Sources */,
