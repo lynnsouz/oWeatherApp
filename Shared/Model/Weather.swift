@@ -148,6 +148,9 @@ extension ForecastResponse {
         }
         return newList
     }
+    var cityDescription: String {
+        "\(city.name) (\(city.country))"
+    }
 }
 
 // MARK: - City
