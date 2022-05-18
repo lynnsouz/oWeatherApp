@@ -32,6 +32,9 @@ struct WeatherDayView: View {
             }
             Text(day.main.temperature)
                 .foregroundColor(.white)
+//            Text("H:\(day.main.max) L:\(day.main.min)")
+//                .foregroundColor(.white)
+//                .font(.footnote)
         }
     }
 }

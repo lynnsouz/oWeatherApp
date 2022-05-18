@@ -180,7 +180,15 @@ struct ForecastMain: Codable {
 
 extension ForecastMain {
     var temperature: String {
-        "\(String(format: "%.2f", arguments: [temp]))°"
+        "\(String(format: "%.0f", arguments: [temp]))°"
+    }
+    
+    var min: String {
+        "\(String(format: "%.0f", arguments: [tempMin]))°"
+    }
+    
+    var max: String {
+        "\(String(format: "%.0f", arguments: [tempMax]))°"
     }
 }
 

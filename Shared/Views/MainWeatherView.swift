@@ -21,14 +21,16 @@ struct MainWeatherView : View{
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
                 }
-                Image(uiImage: imageLoader.image)
-                    .renderingMode(.original)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 88, height: 88)
-                    .onAppear {
-                        imageLoader.loadWeatherImage(for: info.list.first?.weather.first?.icon ?? "")
-                    }
+                VStack {
+                    Image(uiImage: imageLoader.image)
+                        .frame(width: 88, height: 88)
+                        .onAppear {
+                            imageLoader.loadWeatherImage(for: info.list.first?.weather.first?.icon ?? "")
+                        }
+                    Text(info.list.first?.weather.first?.main ?? "")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
             }
             Text(info.list.first?.main.temperature ?? "")
                 .foregroundColor(.white)
@@ -41,8 +43,39 @@ struct MainWeatherView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             WeatherBackgroudView(isNight: true)
-            MainWeatherView(info: ForecastResponse(cod: "01", message: 1, cnt: 2, list: [ForecastList(dt: 000200, main: ForecastMain(temp: 20, feelsLike: 20, tempMin: 20, tempMax: 20, pressure: 20, seaLevel: 1, grndLevel: 2, humidity: 50, tempKf: 30), weather: [ForecastWeather(id: 01, main: "main", weatherDescription: "Clouds", icon: "02d")], clouds: ForecastClouds(all: 1), wind: ForecastWind(speed: 20, deg: 2, gust: 20), visibility: 1, pop: 20, rain: Rain(the3H: 30), sys: ForecastSys(pod: "d"), dtTxt: "date")], city: City(id: 1, name: "Brasilia", coord: ForecastCoord(lat: 1000, lon: 1000), country: "BR", population: 2000, timezone: 200, sunrise: 20, sunset: 200)))
+            
+            MainWeatherView(info: ForecastResponse(cod: "200",
+                                                   message: 0,
+                                                   cnt: 40,
+                                                   list: [ForecastList(dt: 1652907600.0,
+                                                                       main: ForecastMain(temp: 14.25,
+                                                                                          feelsLike: 12.54,
+                                                                                          tempMin: 14.25,
+                                                                                          tempMax: 14.25,
+                                                                                          pressure: 1016,
+                                                                                          seaLevel: 1016,
+                                                                                          grndLevel: 889,
+                                                                                          humidity: 31,
+                                                                                          tempKf: 0.0),
+                                                                       weather: [ForecastWeather(id: 803,
+                                                                                                 main: "Clouds",
+                                                                                                 weatherDescription: "broken clouds",
+                                                                                                 icon: "04n")],
+                                                                       clouds: ForecastClouds(all: 75),
+                                                                       wind: ForecastWind(speed: 3.81, deg: 207, gust: 7.82),
+                                                                       visibility: 10000,
+                                                                       pop: 0.0,
+                                                                       rain: nil,
+                                                                       sys: ForecastSys(pod: "n"),
+                                                                       dtTxt: "2022-05-18 21:00:00")],
+                                                   city: City(id: 3469058,
+                                                              name: "Brasília",
+                                                              coord: ForecastCoord(lat: -15.8372, lon: -48.0258),
+                                                              country: "BR",
+                                                              population: 1000000,
+                                                              timezone: -10800,
+                                                              sunrise: 1652866087,
+                                                              sunset: 1652906951)))
         }
-        
     }
 }

@@ -25,6 +25,7 @@
 		3C8B024428350EA8005B51D1 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B024328350EA8005B51D1 /* JSONDecoderExtension.swift */; };
 		3C8B024628350EEA005B51D1 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B024528350EEA005B51D1 /* URLSessionExtension.swift */; };
 		3C8B024828350F38005B51D1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B024728350F38005B51D1 /* API.swift */; };
+		3C8B024A28351399005B51D1 /* ChangeCityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B024928351399005B51D1 /* ChangeCityButton.swift */; };
 		3C9500BF28331C8D002E0500 /* CityTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9500BE28331C8D002E0500 /* CityTextView.swift */; };
 		3C9500C028331C8D002E0500 /* CityTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9500BE28331C8D002E0500 /* CityTextView.swift */; };
 		3CFDF14328329DE700E9E515 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDF14228329DE700E9E515 /* ForecastViewModel.swift */; };
@@ -47,6 +48,7 @@
 		3C8B024328350EA8005B51D1 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
 		3C8B024528350EEA005B51D1 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		3C8B024728350F38005B51D1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3C8B024928351399005B51D1 /* ChangeCityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityButton.swift; sourceTree = "<group>"; };
 		3C9500BE28331C8D002E0500 /* CityTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTextView.swift; sourceTree = "<group>"; };
 		3CC5406328332679000C654F /* OWeatherApp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OWeatherApp--iOS--Info.plist"; sourceTree = "<group>"; };
 		3CFDF14228329DE700E9E515 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				3C13326C28331D3700C6F9DC /* MainWeatherView.swift */,
 				3C13326F28331FAC00C6F9DC /* WeatherDayView.swift */,
 				3C133272283320D000C6F9DC /* BackgroudView.swift */,
+				3C8B024928351399005B51D1 /* ChangeCityButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				3C8B024628350EEA005B51D1 /* URLSessionExtension.swift in Sources */,
 				3CFDF1452832A76200E9E515 /* DateExtension.swift in Sources */,
 				3C346BD42831566700C17B5F /* Weather.swift in Sources */,
+				3C8B024A28351399005B51D1 /* ChangeCityButton.swift in Sources */,
 				3C8B024828350F38005B51D1 /* API.swift in Sources */,
 				3CFDF14328329DE700E9E515 /* ForecastViewModel.swift in Sources */,
 				3C13327028331FAC00C6F9DC /* WeatherDayView.swift in Sources */,

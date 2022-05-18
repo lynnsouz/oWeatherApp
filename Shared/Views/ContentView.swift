@@ -30,6 +30,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .bold()
                 } else {
+                    ChangeCityButton()
                     CityTextView(cityName: forecastViewModel.response?.cityDescription)
                     if let response = forecastViewModel.response {
                         MainWeatherView(info: response)

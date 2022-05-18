@@ -46,6 +46,7 @@ class ForecastViewModel: ObservableObject {
     }
     
     private func updateForecast(_ response: ForecastResponse) {
+        print(response)
         DispatchQueue.main.async {
             self.response = response
             self.isLoading = false
