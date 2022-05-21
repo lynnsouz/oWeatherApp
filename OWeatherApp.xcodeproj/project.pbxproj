@@ -14,6 +14,7 @@
 		3C133273283320D000C6F9DC /* BackgroudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C133272283320D000C6F9DC /* BackgroudView.swift */; };
 		3C133274283320D000C6F9DC /* BackgroudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C133272283320D000C6F9DC /* BackgroudView.swift */; };
 		3C194F712839296D0001834E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C194F702839296D0001834E /* APIManager.swift */; };
+		3C194F7628393A110001834E /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3C194F7528393A110001834E /* Config.xcconfig */; };
 		3C346BC428313BF800C17B5F /* OWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BB428313BF700C17B5F /* OWeatherAppApp.swift */; };
 		3C346BC528313BF800C17B5F /* OWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BB428313BF700C17B5F /* OWeatherAppApp.swift */; };
 		3C346BC628313BF800C17B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C346BB528313BF700C17B5F /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		3C13326F28331FAC00C6F9DC /* WeatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayView.swift; sourceTree = "<group>"; };
 		3C133272283320D000C6F9DC /* BackgroudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroudView.swift; sourceTree = "<group>"; };
 		3C194F702839296D0001834E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3C194F7528393A110001834E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3C346BB428313BF700C17B5F /* OWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWeatherAppApp.swift; sourceTree = "<group>"; };
 		3C346BB528313BF700C17B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C346BB628313BF800C17B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		3C346BAE28313BF700C17B5F = {
 			isa = PBXGroup;
 			children = (
+				3C194F7528393A110001834E /* Config.xcconfig */,
 				3CC5406328332679000C654F /* OWeatherApp--iOS--Info.plist */,
 				3C486BF22832C6FE00B19424 /* README.md */,
 				3C346BB328313BF700C17B5F /* Shared */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C486BF32832C6FE00B19424 /* README.md in Resources */,
+				3C194F7628393A110001834E /* Config.xcconfig in Resources */,
 				3C346BC828313BF800C17B5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +297,7 @@
 /* Begin XCBuildConfiguration section */
 		3C346BCA28313BF800C17B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C194F7528393A110001834E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -351,6 +356,7 @@
 		};
 		3C346BCB28313BF800C17B5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C194F7528393A110001834E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
