@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  OWeatherApp (iOS)
+//
+//  Created by Lyn on 21/05/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+OPENW_API = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
