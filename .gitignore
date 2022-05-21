@@ -22,6 +22,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 *.DS_Store
+Config.xcconfig
+*.xcconfig
 
 ## Obj-C/Swift specific
 *.hmap
@@ -89,5 +91,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-Config.xcconfig
-*.xcconfig
