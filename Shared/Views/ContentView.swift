@@ -18,38 +18,22 @@ struct ContentView: View {
             WeatherBackgroudView(isNight: forecastViewModel.response?.list.first?.sys.pod == "n")
             VStack{
                 if forecastViewModel.isLoading {
-                    Spacer()
-                    ProgressView("Loading...")
-                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                        .foregroundColor(.white)
-                        .font(.system(size: 32, weight: .medium, design: .default))
-                        .padding()
-                    Spacer()
+                   LoadingView()
                 } else if !forecastViewModel.errorMessage.isEmpty {
                     Text(forecastViewModel.errorMessage)
                         .foregroundColor(.white)
                         .bold()
                 } else {
-                    ChangeCityButton()
+                    //ChangeCityButton()
                     CityTextView(cityName: forecastViewModel.response?.cityDescription)
                     if let response = forecastViewModel.response {
                         MainWeatherView(info: response)
                     }
                     
-                    if forecastViewModel.isLoading {
-                        ProgressView("Loading forecast...")
-                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                            .foregroundColor(.white)
-                    } else if !forecastViewModel.errorMessage.isEmpty {
-                        Text(forecastViewModel.errorMessage)
-                            .foregroundColor(.white)
-                            .bold()
-                    } else {
-                        HStack (spacing: 25){
-                            ForEach(forecastViewModel.response?.filteredList[1...4] ?? [], id: \.dt)
-                            { day in
-                                WeatherDayView(day: day)
-                            }
+                    HStack (spacing: 25){
+                        ForEach(forecastViewModel.response?.filteredList[1...4] ?? [], id: \.dt)
+                        { day in
+                            WeatherDayView(day: day)
                         }
                     }
                 }

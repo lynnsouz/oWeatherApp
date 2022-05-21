@@ -7,21 +7,21 @@
 import Foundation
 
 class ForecastViewModel: ObservableObject {
-    private let url: URL = URL(string: "https://api.openweathermap.org/data/2.5/forecast?lat=-15.8372013&lon=-48.0258046&units=metric&appid=eda23fcc5bb7ce65e74d3cfaf6155cb8")!
-    
+    private var coord: ForecastCoord
     
     @Published var response: ForecastResponse?
     @Published var errorMessage: String = ""
     @Published var isLoading: Bool = true
     
-    init() {
+    init(coord: ForecastCoord = ForecastCoord(lat: -15.8372013, lon: -48.0258046)) {
+        self.coord = coord
         fetchForecast()
     }
     
     func fetchForecast() {
         self.isLoading = true
-        URLSession.shared.forecastResponseTask(with: url)
-        { [weak self] forecast, _, error in
+        APIManager.shared.getForecastFor(lat: coord.lat, lon: coord.lon)
+        { [weak self] forecast, error in
             guard let self = self else { return }
             if let error = error {
                 self.updateErrorMessage(error.localizedDescription)
